@@ -34,7 +34,7 @@ WebUI.click(findTestObject('Object Repository/Page_Document/input'))
 		alertText = WebUI.getAlertText()
 		println(alertText.substring(alertText.lastIndexOf('.') + 1).length())
 		try{
-			assert alertText.substring(alertText.lastIndexOf('.') + 1).length() <= 14:"el dato se validara"
+			assert alertText.substring(alertText.lastIndexOf('.') + 1).length() <= 15:"el dato se validara"
 			println("el dato es valido")
 		}catch(AssertionError e){
 			println ("el dato es mayor a 15 caracteres" + StepErrorException)
