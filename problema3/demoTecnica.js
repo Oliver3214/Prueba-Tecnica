@@ -1,7 +1,16 @@
-function createDOM(ClassName) {
-    spam = document.getElementById("contenedor");
-    console.log(span.innerHTML);
+//Eliminar por el ID
+function createDOM(ClassName="prueba") {
+    var div = document.getElementById("contenedor")
+    div.innerHTML = "<span class="+ClassName+">se sumo una etiqueta span:  " +"</span>"
 }
-function deleteDOM(ClassName) {
-    
+//Eliminar por la Classe
+function deleteDOM(ClassName="prueba") {
+    var span = document.getElementsByClassName("Prueba");
+    span.parentNode.remove("prueba");
 }
+// Eliminar por el Id
+function deleteDOM(ClassName="prueba") {
+    var div = document.getElementById("contenedor");
+    div.parentNode.remove("prueba");
+}
+
